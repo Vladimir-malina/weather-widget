@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+}
+
+.weather-content {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+.current-weather {
+    margin: 20px 0 100px;
+
+		&__location {
+      font-size: 24px;
+      font-weight: bold;
+			margin: 10px 7px;
+		}
+
+		&__icon-temperature {
+			display: flex;
+			align-items: center;
+			margin: 0px 7px;
+		}
+
+		&__temperature {
+      font-size: 32px;
+		}
+
+		&__icon {
+			width: 60px;
+			margin-right: 20px;
+		}
+
+		&__phenomenon {
+			margin: 10px 7px;
+		}
+
+		&__date {
+			margin: 10px 7px;
+
+			&_wrong {
+				color:red;
+				margin-left: 10px;
+			}
+		}
+}
+
+.table {
+    border-color:gray;
+    tr:first-child, tr:nth-child(3), tr:nth-child(5), tr:nth-child(7) {
+      background: rgba(241, 231, 231, 0.3);
+    }
+		
+		&__wind {
+			line-height: 20px;
+			padding: 7px 10px;
+		}
+
+		&__geo-coords {
+			color: red;
+		}
+}
+
+.forecast {
+	min-width: 600px;
+	max-width: 800px;
+	&__location{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.day-div {
+	border: solid 1px rgb(199, 197, 197);
+	padding: 10px;
+	background-color: rgb(226, 224, 224);
+}
+
+.weather-div {
+	display: flex;
+	border-bottom: solid 1px rgb(223, 219, 219);
+	padding: 7px;
+	&__left {
+		flex: 0 0 40%;
+		display: flex;
+		align-items: center;
+
+		&_pic {
+			width: 50px;
+		}
+	}
+	&__right {
+		font-size: 15px;
+		font-weight: 200;
+		&_top {
+			margin-bottom: 7px;
+		}
+		&_temperature {
+			font-size: 12px;
+			color: white;
+			background-color: gray;
+			border-radius: 10px;
+			padding: 1px 6px 2px 8px;
+			margin-right: 10px;
+		}
+		&_phenomenon {
+			font-style: italic;
+		}
+	}
+}
+
+
+

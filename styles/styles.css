@@ -1,0 +1,138 @@
+body {
+  font-family: sans-serif;
+}
+
+.weather-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.current-weather {
+  margin: 20px 0 100px;
+}
+
+.current-weather__location {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 7px;
+}
+
+.current-weather__icon-temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 7px;
+}
+
+.current-weather__temperature {
+  font-size: 32px;
+}
+
+.current-weather__icon {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.current-weather__phenomenon {
+  margin: 10px 7px;
+}
+
+.current-weather__date {
+  margin: 10px 7px;
+}
+
+.current-weather__date_wrong {
+  color: red;
+  margin-left: 10px;
+}
+
+.table {
+  border-color: gray;
+}
+
+.table tr:first-child, .table tr:nth-child(3), .table tr:nth-child(5), .table tr:nth-child(7) {
+  background: rgba(241, 231, 231, 0.3);
+}
+
+.table__wind {
+  line-height: 20px;
+  padding: 7px 10px;
+}
+
+.table__geo-coords {
+  color: red;
+}
+
+.forecast {
+  min-width: 600px;
+  max-width: 800px;
+}
+
+.forecast__location {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.day-div {
+  border: solid 1px #c7c5c5;
+  padding: 10px;
+  background-color: #e2e0e0;
+}
+
+.weather-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid 1px #dfdbdb;
+  padding: 7px;
+}
+
+.weather-div__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-div__left_pic {
+  width: 50px;
+}
+
+.weather-div__right {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.weather-div__right_top {
+  margin-bottom: 7px;
+}
+
+.weather-div__right_temperature {
+  font-size: 12px;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 1px 6px 2px 8px;
+  margin-right: 10px;
+}
+
+.weather-div__right_phenomenon {
+  font-style: italic;
+}
